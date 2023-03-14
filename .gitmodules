@@ -10,3 +10,6 @@
 [submodule "forge/lib/@enzyme"]
 	path = forge/lib/@enzyme
 	url = https://github.com/enzymefinance/protocol.git
+[submodule "trade-executor"]
+	path = trade-executor
+	url = https://github.com/tradingstrategy-ai/trade-executor.git
