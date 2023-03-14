@@ -4,3 +4,4 @@ secrets/
 
 forge/cache
 forge/out
+env/*
