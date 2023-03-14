@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { connected, chainId, defaultEvmStores, signerAddress } from 'svelte-ethers-store';
 	import { Button } from '$lib/components';
+	import Backtest from './Backtest.svelte';
 </script>
 
 <main>
 	<header class="container">
-		<h1>MATIC-USDC SMA on Sushi</h1>
+		<h1>ETHDubai 2023 hackathon</h1>
 	</header>
 
 	<section class="container">
@@ -42,13 +43,7 @@
 		</p>
 	</section>
 
-	<section class="container">
-		<h2>Backtested performance</h2>
-		<p>
-			Reiciendis delectus blanditiis, repellat excepturi fugiat eos commodi quo exercitationem
-			aspernatur quas pariatur sed id omnis sunt facere officia doloribus, laudantium harum?
-		</p>
-	</section>
+	<Backtest />
 
 	<section class="container">
 		<h2>Strategy execution and source code</h2>
