@@ -5,3 +5,5 @@ secrets/
 forge/cache
 forge/out
 env/*
+
+__pycache__

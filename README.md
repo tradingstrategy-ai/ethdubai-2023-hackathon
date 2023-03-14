@@ -42,15 +42,37 @@ The vault is deployed and configured using `hackathon/deploy.py`
 - We deploy Enzyme vault using our deployment script, ABI files from `web3-ethereum-defi`
   and ABI files we compiled using Forge
 
-To deploy  the adapter
+0x92fcde09790671cf085864182b9670c77da0884b
+
+To deploy the adapter.
 
 ```shell
+# 0x92fcde09790671cf085864182b9670c77da0884b is Enzyme IntegrationManager on Polygon
+# https://docs.enzyme.finance/developers/contracts/polygon
  forge create \
+  --constructor-args 0x92fcde09790671cf085864182b9670c77da0884b \
   --rpc-url $JSON_RPC_POLYGON \
-  --private-key $PRIVATE_KEY \ 
+  --private-key $PRIVATE_KEY \
   --etherscan-api-key $ETHERSCAN_API_KEY \
-  --verify \  
+  --verify \
   src/SushiAdapter.sol:SushiAdapter
+```
+
+After PolygonScan fails to verify contract please try again:
+
+
+Deployer: 0x454E9F5219CD92BCAa8c5C0406c16fdA6116b342
+Deployment address: 0x8b326FC39d222a7f8A6a210FBe3CDCDb2C2b62Ed
+
+```shell
+forge verify-contract \
+    --chain-id 137 \
+    --watch \
+    --constructor-args $(cast abi-encode "constructor(address)" "0x92fcde09790671cf085864182b9670c77da0884b") \
+    --compiler-version 0.6.12+commit.27d51765 \
+    --etherscan-api-key $ETHERSCAN_API_KEY \
+    0x8b326FC39d222a7f8A6a210FBe3CDCDb2C2b62Ed \
+    src/SushiAdapter.sol:SushiAdapter     
 ```
 
 # Strategy code

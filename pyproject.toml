@@ -9,7 +9,12 @@ packages = [{include = "hackathon"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 web3-ethereum-defi = "^0.14.1"
+coloredlogs = "^15.0.1"
+ipdb = "^0.13.13"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+deploy = 'hackathon.deploy:deploy'
