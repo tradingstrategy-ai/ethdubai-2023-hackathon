@@ -18,3 +18,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 deploy = 'hackathon.deploy:deploy'
+deposit = 'hackathon.deposit:deposit'
