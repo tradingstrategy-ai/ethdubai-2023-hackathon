@@ -1,0 +1,12 @@
+[submodule "forge/src/enzyme"]
+	path = forge/src/enzyme
+	url = https://github.com/enzymefinance/protocol.git
+[submodule "forge/lib/@openzeppelin"]
+	path = forge/lib/@openzeppelin
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts.git
+[submodule "forge/forge/lib/@enzyme"]
+	path = forge/forge/lib/@enzyme
+	url = https://github.com/enzymefinance/protocol.git
+[submodule "forge/lib/@enzyme"]
+	path = forge/lib/@enzyme
+	url = https://github.com/enzymefinance/protocol.git
