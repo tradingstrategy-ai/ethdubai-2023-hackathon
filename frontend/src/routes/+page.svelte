@@ -11,7 +11,7 @@
 	<section class="container">
 		<h2>Connect wallet</h2>
 
-		{#if $connected}
+		{#if $connected && $signerAddress}
 			<div>
 				<p>Your wallet is connected!</p>
 				<p><strong>Chain:</strong> {$chainId}</p>
