@@ -55,12 +55,12 @@ We performed a backtest
   - Stop loss triggers at 3% 
   - Use 1/nth portfolio allocation
   - Maintain 50% cash buffer
+  - As a long only strategy, for the capital preservation, don't trade on bear market, indicated by MATIC token 15 days simple moving average (SMA) price
 - Strategy performance
   - Backtesting 2022-01-01 - 2023-02-01 (396 days)
   - Annualised estimated return 64% 
   - LP fees paid ~$1000
   - Max pullback -10%
-- Don't trade on bear market, indicated by MATIC token 15 days simple moving average (SMA) price
 
 The strategy performance vs. buy-and-hold MATIC.
 
