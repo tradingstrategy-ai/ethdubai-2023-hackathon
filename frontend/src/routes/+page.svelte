@@ -1,7 +1,29 @@
+<script lang="ts">
+	import { connected, chainId, defaultEvmStores, signerAddress } from 'svelte-ethers-store';
+	import { Button } from '$lib/components';
+</script>
+
 <main>
 	<header class="container">
 		<h1>MATIC-USDC SMA on Sushi</h1>
 	</header>
+
+	<section class="container">
+		<h2>Connect wallet</h2>
+
+		{#if $connected}
+			<div>
+				<p>Your wallet is connected!</p>
+				<p><strong>Chain:</strong> {$chainId}</p>
+				<p><strong>Signer address:</strong> {$signerAddress}</p>
+				<Button label="Disconnect" on:click={() => defaultEvmStores.disconnect()} />
+			</div>
+		{:else}
+			<div>
+				<Button label="Connect wallet" on:click={() => defaultEvmStores.setProvider()} />
+			</div>
+		{/if}
+	</section>
 
 	<section class="container">
 		<h2>About this strategy</h2>
