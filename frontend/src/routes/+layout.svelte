@@ -2,8 +2,9 @@
 	import 'sanitize.css';
 	import 'sanitize.css/typography.css';
 	import '../app.css';
-	import { Header } from '$lib/components';
+	import { Header, Footer } from '$lib/components';
 </script>
 
 <Header />
 <slot />
+<Footer />
