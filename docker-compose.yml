@@ -1,8 +1,8 @@
 version: "3.9"
 
 services:
-  sushi-polygon-ema:
-    container_name: sushi-polygon-ema
+  ethdubai-hackathon:
+    container_name: ethdubai-hackathon
     image: ghcr.io/tradingstrategy-ai/trade-executor:${TRADE_EXECUTOR_VERSION}
     volumes:
       # Map the path from where we load the strategy Python modules
@@ -16,7 +16,7 @@ services:
     ports:
       - "127.0.0.1:20234:3456"
     env_file:
-      - ./secrets/sushi.env
+      - ./env/ethdubai.env
     restart: unless-stopped
     mem_swappiness: 0
     command: start
