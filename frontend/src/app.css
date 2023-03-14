@@ -1,0 +1,14 @@
+:root {
+	--container-max-width: 64rem;
+	--container-margin: 1.5rem;
+}
+
+.container {
+	--container-width: min(calc(100% - (var(--container-margin) * 2)), var(--container-max-width));
+	display: grid;
+	padding-inline: calc((100% - var(--container-width)) / 2);
+}
+
+a {
+	color: inherit;
+}
