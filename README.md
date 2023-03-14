@@ -16,10 +16,12 @@ git submodule update --init --recursive
 
 # Contracts
 
-Contracts are managed by Forge
+We have one in-house adapter contract and then a complex suite of contracts from other protocols.
 
+- Contract compilation and deployment is managed by Forge
 - Depends on Enzyme and OpenZeppelin
 - Enzyme protocol is used for the investment vault
+- [Enzyme protocol is already deployed on Polygon](https://docs.enzyme.finance/developers/contracts/polygon)
 - We deploy a special Enzyme vault that is using custom SushiAdapter for connecting
   trade instructions to the investment vault and then to Sushi protocol
 - Enzyme protocol is already deployed on Polygon, so we do not deploy it
@@ -28,6 +30,7 @@ Contracts are managed by Forge
 To compile:
 
 ```shell
+source env/local.env  # Set up secrets for commands used in this README
 cd forge 
 forge build              
 ```
@@ -39,10 +42,15 @@ The vault is deployed and configured using `hackathon/deploy.py`
 - We deploy Enzyme vault using our deployment script, ABI files from `web3-ethereum-defi`
   and ABI files we compiled using Forge
 
-To deploy 
+To deploy  the adapter
 
 ```shell
-
+ forge create \
+  --rpc-url $JSON_RPC_POLYGON \
+  --private-key $PRIVATE_KEY \ 
+  --etherscan-api-key $ETHERSCAN_API_KEY \
+  --verify \  
+  src/SushiAdapter.sol:SushiAdapter
 ```
 
 # Strategy code
