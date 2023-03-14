@@ -18,7 +18,7 @@ import os
 
 from eth_account import Account
 from eth_account.signers.local import LocalAccount
-from web3.contract import Contract
+
 from web3.middleware import construct_sign_and_send_raw_middleware
 
 from eth_defi.abi import get_deployed_contract, encode_function_call
