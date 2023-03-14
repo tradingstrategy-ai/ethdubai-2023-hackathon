@@ -76,7 +76,7 @@ minimum_mometum_threshold = 0.03
 
 # The amount of XY liquidity a pair must have on DEX before
 # we are happy to take any position.
-minimum_liquidity_threshold = 100_000
+minimum_liquidity_threshold = 300_000
 
 # Don't bother with trades that would move position
 # less than 300 USD
