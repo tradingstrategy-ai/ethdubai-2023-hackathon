@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ethdubai-2023-hackathon"
+version = "0.1.0"
+description = ""
+authors = ["Mikko Ohtamaa <mikko@opensourcehacker.com>"]
+readme = "README.md"
+packages = [{include = "hackathon"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+web3-ethereum-defi = "^0.14.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
