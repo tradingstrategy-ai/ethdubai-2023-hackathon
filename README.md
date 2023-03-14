@@ -6,7 +6,7 @@ The hackathon comes with one example trading strategy, but it's easy to customis
 
 # Goal
 
-**Citade-Sashimi** benefits decentralised investors and Sushi
+**Citade-Sashimi** benefits decentralised finance users and Sushi
 
 - For **DeFi users** the project offer professional grade investable trading strategies with features like portfolio rebalancing, stop loss
   alpha signals, position risk sizing and liquidity awareness. The advanced
@@ -43,6 +43,7 @@ We created [an example trading strategy](https://github.com/tradingstrategy-ai/e
 
 We performed a backtest 
 
+- The strategy performance and cash reserves are denonimated in USDC
 - Only long positions, spot market
 - Trade on Sushi DEX, Polygon only
 - Momentum trading
@@ -67,7 +68,7 @@ The strategy performance vs. buy-and-hold MATIC.
     
 [See the strategy notebook bactesting results](https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/blob/master/notebook/ethdubai-hackathon.ipynb) on Github for more statistics, or run the backtest yourself using the instructions below.
 
-**Note** Because the straetgy performs only one rebalance per week, we cannot show any live trading within the hackathon period. We did some initial [smoke testing trades using Python scripting](https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/tree/master/hackathon) to show that the live portfolio rebalance works against Sushi liquidity.   
+**Note** Because the strategy performs rebalance trades ~once per week, we cannot show any live trading results within the EthDubai hackathon period. We did some initial [smoke testing trades using Python scripting](https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/tree/master/hackathon) to show that the live portfolio rebalance works against Sushi liquidity.   
 
 # Architecture
 
