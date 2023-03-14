@@ -7,8 +7,8 @@ readme = "README.md"
 packages = [{include = "hackathon"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-web3-ethereum-defi = "^0.14.1"
+python = ">=3.10,<3.11"
+trade-executor = {path = "trade-executor", develop = true, extras=["data", "execution", "web-server"]}
 
 [build-system]
 requires = ["poetry-core"]
