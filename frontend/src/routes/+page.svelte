@@ -15,8 +15,12 @@
 	<section class="container">
 		<h2>Current performance</h2>
 		<p>
-			Veritatis, sequi, laborum cum laboriosam veniam ipsum optio accusantium officiis at accusamus
-			voluptates nesciunt. Voluptatem, eius modi! Architecto illo pariatur ipsa obcaecati.
+			<strong>Not enough data.</strong>
+		</p>
+		<p>
+			This strategy has not been running long enough to gather sufficient live trading performance
+			data. Strategies may do trades weekly or monthly and it will take several rebalance cycles to
+			refelct the true performance.
 		</p>
 	</section>
 
