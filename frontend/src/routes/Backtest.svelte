@@ -33,7 +33,7 @@
 
 	<ul>
 		<li><span style:color="#008800">▬</span> Strategy</li>
-		<li><span style:color="#880000">▬</span> MATIC</li>
+		<li><span style:color="#add8e6">▬</span> MATIC</li>
 		<li><span style:color="#ffa500">▬</span> ETC</li>
 		<li><span style:color="#ff0000">▬</span> BTC</li>
 		<li><span style:color="#000088">▬</span> USD (do nothing)</li>
