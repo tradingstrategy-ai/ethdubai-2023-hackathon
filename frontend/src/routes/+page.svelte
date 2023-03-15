@@ -1,6 +1,7 @@
 <script lang="ts">
 	import InvestWidget from './InvestWidget.svelte';
 	import Backtest from './Backtest.svelte';
+	import AboutStrategy from './AboutStrategy.svelte';
 </script>
 
 <main>
@@ -9,15 +10,7 @@
 	</header>
 
 	<InvestWidget />
-
-	<section class="container">
-		<h2>About this strategy</h2>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius deserunt praesentium
-			soluta cupiditate excepturi magnam ducimus nulla aspernatur voluptas, odio voluptate nobis
-			adipisci distinctio ex vel rem ipsam ullam.
-		</p>
-	</section>
+	<AboutStrategy />
 
 	<section class="container">
 		<h2>Current performance</h2>
