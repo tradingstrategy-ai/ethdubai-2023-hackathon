@@ -38,9 +38,9 @@ In this hackathon we created
 - Users can invest and withdraw to the vault
 - The vault automatically calculates profit sharing, shares, etc.
 
-Example bit of strategy Python source code
+A bit of the example trading strategy Python source code:
 
-![Strategy source code(./source-code.png)
+![Strategy source code](./source-code.png)
 
 
 # Example trading algorithm
@@ -125,7 +125,9 @@ We have one in-house adapter contract and then a complex suite of contracts from
 - Enzyme protocol is already deployed on Polygon, so we do not deploy it
 - The Trading Strategy oracle is set up as a fund manager for the vault
 
-See the deployed contracts on PolygonScan
+**Live on Polygon mainnet**. See the deployed contracts on PolygonScan
+
+![Enzyme integration](enzyme.jpg)
 
 - [Sushi adapter for Enzyme Protocol and Trading Strategy oracle](https://polygonscan.com/address/0x8b326FC39d222a7f8A6a210FBe3CDCDb2C2b62Ed#code)
 - [Deployed Enzymy vault](https://polygonscan.com/address/0x8890a249dfe790656a1a41c1515d266ed31b8525#code)
