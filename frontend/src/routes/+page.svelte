@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { connected, chainId, defaultEvmStores, signerAddress } from 'svelte-ethers-store';
-	import { Button } from '$lib/components';
+	import InvestWidget from './InvestWidget.svelte';
 	import Backtest from './Backtest.svelte';
 </script>
 
@@ -9,22 +8,7 @@
 		<h1>ETHDubai 2023 hackathon</h1>
 	</header>
 
-	<section class="container">
-		<h2>Connect wallet</h2>
-
-		{#if $connected && $signerAddress}
-			<div>
-				<p>Your wallet is connected!</p>
-				<p><strong>Chain:</strong> {$chainId}</p>
-				<p><strong>Signer address:</strong> {$signerAddress}</p>
-				<Button label="Disconnect" on:click={() => defaultEvmStores.disconnect()} />
-			</div>
-		{:else}
-			<div>
-				<Button label="Connect wallet" on:click={() => defaultEvmStores.setProvider()} />
-			</div>
-		{/if}
-	</section>
+	<InvestWidget />
 
 	<section class="container">
 		<h2>About this strategy</h2>

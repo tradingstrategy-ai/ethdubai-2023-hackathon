@@ -28,7 +28,7 @@
 		padding: 0.5rem 1.5rem;
 		border: 1px solid transparent;
 		border-radius: 1.5rem;
-		background: #ddd;
+		background: var(--button-background, #dddddd);
 		font: inherit;
 		font-weight: 600;
 		letter-spacing: 0.02em;
@@ -51,5 +51,12 @@
 		filter: none;
 		opacity: 0.65;
 		cursor: not-allowed;
+	}
+
+	@media (max-width: 768px) {
+		.button {
+			padding: 0.25rem 1rem;
+			font-size: 14px;
+		}
 	}
 </style>

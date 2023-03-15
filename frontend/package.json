@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"ethers": "^5.7.2",
 		"sanitize.css": "^13.0.0",
 		"svelte-ethers-store": "^2.5.13"
 	}
