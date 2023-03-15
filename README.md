@@ -198,3 +198,7 @@ Frontend is written in SvelteKit.
 - [Deployment instructions are in the trade-executor documentation](https://tradingstrategy.ai/docs/running/strategy-deployment.html)
 - Multiple oracles can be deployed and configured to voting to make oracle
   execution decentralised
+
+# Further questions
+
+- [Join our Discord](https://tradingstrategy.ai/community)
