@@ -2,6 +2,7 @@
 	import InvestWidget from './InvestWidget.svelte';
 	import Backtest from './Backtest.svelte';
 	import AboutStrategy from './AboutStrategy.svelte';
+	import PerformanceMetrics from './PerformanceMetrics.svelte';
 </script>
 
 <main>
@@ -25,6 +26,8 @@
 	</section>
 
 	<Backtest />
+
+	<PerformanceMetrics />
 
 	<section class="container">
 		<h2>Strategy execution and source code</h2>
