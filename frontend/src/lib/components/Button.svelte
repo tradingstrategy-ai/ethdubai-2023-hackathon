@@ -28,7 +28,8 @@
 		padding: 0.5rem 1.5rem;
 		border: 1px solid transparent;
 		border-radius: 1.5rem;
-		background: var(--button-background, #dddddd);
+		background: var(--button-background, var(--c-button-primary));
+		color: var(--c-text);
 		font: inherit;
 		font-weight: 600;
 		letter-spacing: 0.02em;

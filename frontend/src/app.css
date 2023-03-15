@@ -1,12 +1,23 @@
 :root {
 	--container-max-width: 64rem;
 	--container-margin: 1.5rem;
+	--c-background: #0e0f23;
+	--c-text: #e7e7e9;
+	--c-accent: #1e293b;
+	--c-button-primary: #3b82f6;
 }
 
 .container {
 	--container-width: min(calc(100% - (var(--container-margin) * 2)), var(--container-max-width));
 	display: grid;
 	padding-inline: calc((100% - var(--container-width)) / 2);
+}
+
+html {
+	background: var(--c-background);
+	color: var(--c-text);
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
