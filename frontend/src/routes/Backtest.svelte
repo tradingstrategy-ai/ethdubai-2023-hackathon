@@ -60,16 +60,21 @@
 	table {
 		background: var(--c-accent);
 		border-radius: 1rem;
-		border-collapse: separate;
+		max-width: 40rem;
 	}
 
 	th,
 	td {
 		padding: 0.5rem 1rem;
+		text-align: left;
+		vertical-align: top;
 	}
 
-	th {
-		text-align: left;
-		width: 30%;
+	tr:first-child > * {
+		padding-top: 1rem;
+	}
+
+	tr:last-child > * {
+		padding-bottom: 1rem;
 	}
 </style>
