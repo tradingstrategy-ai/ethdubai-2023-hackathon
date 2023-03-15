@@ -54,7 +54,7 @@
 				<Button label="Connect wallet" on:click={() => defaultEvmStores.setProvider()} />
 			{/if}
 			<Button disabled label="Deposit MATIC" />
-			<Button disabled label="Withsraw tokens" />
+			<Button disabled label="Withdraw tokens" />
 		</div>
 	</div>
 </section>
