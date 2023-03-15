@@ -1,20 +1,20 @@
 
 This is the Github repository for **Citade-Sashimi** EthDubai hackathon project.
-The project implements non-custodial user investable automated trading strategies on the top of Sushi DEX.
+The project implements non-custodial investable automated trading strategies on the top of Sushi DEX.
 
-The hackathon comes with one example trading strategy, but it's easy to customise the approach for the multiple professional-grade quant finance strategies. The strategies can be written in high-elvel Python, using on-chain data sources and 150+ technical indicators out of the box. No Solidity or low level blockchain knowledge is needed.
+The hackathon comes with one example trading strategy, but it's easy to customise the approach for multiple professional-grade quant finance strategies. The strategies can be written in high-elvel Python, using on-chain data sources and 150+ technical indicators out of the box. No Solidity or low level blockchain knowledge is needed.
 
 # Goal
 
 **Citade-Sashimi** benefits decentralised finance users and Sushi
 
-- For **DeFi users** the project offer professional grade investable trading strategies with features like portfolio rebalancing, stop loss
+- For **DeFi users** the project offers professional grade investable trading strategies with features like portfolio rebalancing, stop loss
   alpha signals, position risk sizing and liquidity awareness. The advanced
   risk management features of the automated strategy make DeFi trading safer for users
-  than what they would likely to be execute manually.
-- For **cryptocurrency trades** non-custodial DeFi is safer than hack prone
+  than what they would likely to be executed manually.
+- For **cryptocurrency traders** non-custodial DeFi is safer than hack prone
   and opaque centralised services like **FTX** or **3Commas**.
-- For **Sushi** and its **liquidity provides** offers high quality market taker volume. 
+- For **Sushi** and its **liquidity providers** the project offers high quality market taker volume. 
 - For **strategy developers** there is high-level, easy to use, and much more powerful tooling what mere Solidity smart contracts can do. There is also opportunity for profit-sharing as Enzyme Vaults offer on-chain fund management features.
 
 The trading strategies are based on real yield that comes for trading profits.
@@ -58,7 +58,7 @@ We performed a backtest
   - As a long only strategy, for the capital preservation, don't trade on bear market, indicated by MATIC token 15 days simple moving average (SMA) price
 - Strategy performance
   - Backtesting 2022-01-01 - 2023-02-01 (396 days)
-  - Annualised estimated return 64% 
+  - Annualised estimated return 60% 
   - LP fees paid ~$1000
   - Max pullback -10%
 - **An example strategy**. Currently the hackathon entry misses some performance calculation elements
@@ -87,7 +87,7 @@ The strategy performance vs. buy-and-hold MATIC.
 
 # Development
 
-For building yhe project you need
+For building the project you need
 
 - Foundry
 - Python
@@ -114,7 +114,7 @@ We have one in-house adapter contract and then a complex suite of contracts from
 - Enzyme protocol is already deployed on Polygon, so we do not deploy it
 - The Trading Strategy oracle is set up as a fund manager for the vault
 
-See the deployed contracts on PolyScan
+See the deployed contracts on PolygonScan
 
 - [Sushi adapter for Enzyme Protocol and Trading Strategy oracle](https://polygonscan.com/address/0x8b326FC39d222a7f8A6a210FBe3CDCDb2C2b62Ed#code)
 - [Deployed Enzymy vault](https://polygonscan.com/address/0x8890a249dfe790656a1a41c1515d266ed31b8525#code)
@@ -140,13 +140,13 @@ source env/local.env
 
 # 0x92fcde09790671cf085864182b9670c77da0884b is Enzyme IntegrationManager on Polygon
 # https://docs.enzyme.finance/developers/contracts/polygon
- forge create \
-  --constructor-args 0x92fcde09790671cf085864182b9670c77da0884b \
-  --rpc-url $JSON_RPC_POLYGON \
-  --private-key $PRIVATE_KEY \
-  --etherscan-api-key $ETHERSCAN_API_KEY \
-  --verify \
-  src/SushiAdapter.sol:SushiAdapter
+forge create \
+    --constructor-args 0x92fcde09790671cf085864182b9670c77da0884b \
+    --rpc-url $JSON_RPC_POLYGON \
+    --private-key $PRIVATE_KEY \
+    --etherscan-api-key $ETHERSCAN_API_KEY \
+    --verify \
+    src/SushiAdapter.sol:SushiAdapter
 ```
 
 If/when PolygonScan contract verify fails please try again:
@@ -182,7 +182,7 @@ To open the backtesting Jupyter notebook for the strategy development locally:
 
 ```shell
 poetry shell
-jupyter notebook
+jupyter lab notebook
 ```
 
 # Frontend

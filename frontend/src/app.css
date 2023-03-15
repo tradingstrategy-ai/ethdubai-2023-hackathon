@@ -12,3 +12,19 @@
 a {
 	color: inherit;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-block: 1em 0.5em;
+}
+
+p {
+	margin: 0;
+}
+p + p {
+	margin-top: 1em;
+}
