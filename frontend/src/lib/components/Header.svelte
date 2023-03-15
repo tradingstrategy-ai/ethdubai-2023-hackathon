@@ -15,6 +15,10 @@
 
 	.logo {
 		--logo-height: 4rem;
+	}
+
+	.logo,
+	.logo:visited {
 		color: white;
 	}
 
