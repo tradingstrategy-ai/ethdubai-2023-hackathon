@@ -27,7 +27,7 @@ In this hackathon we created
 
 - Sushi adapter smart contract for Enzyme Vaults, so that trading strategies can perform rebalances using Sushi liquidity (see source, see Polygon smart contract)
 - Trading Strategy backtesting and strategy development notebook for [creating trading algorithmic on the top of Sushi trading pairs and market data feeds].
-- SvelteKit frontend that allows you to connect the wallet and invest the Enzyme Finance vault smart contract that is controlled by Trading Strategy oracles
+- [Demo website cidate-sashimi.com](https://www.citade-sashimi.com) which allows you to connect the wallet and invest the Enzyme Finance vault smart contract that is controlled by Trading Strategy oracles
 
 # How does it work
 
@@ -198,7 +198,12 @@ poetry shell
 jupyter lab notebook
 ```
 
-# Frontend
+# UX and frontend
+
+The automated trading strategies offer the same simplified user experience as yield farming. 
+The end user of DeFi needs only three buttons: Connect wallet, invest, withdraw.
+
+![User experience](ui.png)
 
 Frontend is written in SvelteKit.
 
