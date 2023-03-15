@@ -9,6 +9,8 @@ The hackathon comes with one example trading strategy, but it's easy to customis
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WR_6Cp-7UNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+[View 3 minutes YouTube presentation](https://youtu.be/WR_6Cp-7UNE).
+
 # Goal
 
 **Citade-Sashimi** benefits decentralised finance users and Sushi
