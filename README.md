@@ -38,6 +38,11 @@ In this hackathon we created
 - Users can invest and withdraw to the vault
 - The vault automatically calculates profit sharing, shares, etc.
 
+Example bit of strategy Python source code
+
+![Strategy source code(./source-code.png)
+
+
 # Example trading algorithm
 
 We created [an example trading strategy](https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/blob/master/notebook/ethdubai-hackathon.ipynb) based on [portfolio construction](https://tradingstrategy.ai/glossary/portfolio-construction) methodology.
@@ -67,11 +72,16 @@ We performed a backtest
     - [Price impact](https://tradingstrategy.ai/glossary/price-impact) is not considered - we assume 300k liquidity is enough for trading
     - [Token tax tokens](https://tradingstrategy.ai/glossary/token-tax) are not ignored
 
-The strategy performance vs. buy-and-hold MATIC.
+The strategy performance vs. buy-and-hold MATIC, BTC and ETH. You can see the equity curve is more beautiful due to tighter risk management
 
 ![Strategy performance](./performance.png)
+
+Statistics about the example strategy performance and the risk of individual trades taken:
+
+![Strategy summary](./stats.png)
+
     
-[See the strategy notebook bactesting results](https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/blob/master/notebook/ethdubai-hackathon.ipynb) on Github for more statistics, or run the backtest yourself using the instructions below.
+[See the full strategy notebook backtesting results](https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/blob/master/notebook/ethdubai-hackathon.ipynb) on Github for more statistics, or run the backtest yourself using the instructions below.
 
 **Note** Because the strategy performs rebalance trades ~once per week, we cannot show any live trading results within the EthDubai hackathon period. We did some initial [smoke testing trades using Python scripting](https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/tree/master/hackathon) to show that the live portfolio rebalance works against Sushi liquidity.   
 
