@@ -205,14 +205,15 @@ poetry shell
 jupyter lab notebook
 ```
 
-# UX and frontend
+# Demo website and UX
 
 The automated trading strategies offer the same simplified user experience as yield farming. 
 The end user of DeFi needs only three buttons: Connect wallet, invest, withdraw.
 
 ![User experience](ui.png)
 
-Frontend is written in SvelteKit.
+- View the demo website [www.citade-sashimi.com](https://www.citade-sashimi.com)
+- Frontend is written in SvelteKit.
 
 # Oracle
 
