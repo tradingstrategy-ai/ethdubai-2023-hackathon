@@ -52,7 +52,7 @@
 			{:else}
 				<Button label="Connect MetaMask" on:click={() => defaultEvmStores.setProvider()} />
 			{/if}
-			<Button disabled label="Deposit MATIC" />
+			<Button disabled label="Deposit USDC" />
 			<Button disabled label="Withdraw tokens" />
 		</div>
 	</div>
