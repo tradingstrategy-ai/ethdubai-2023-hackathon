@@ -61,6 +61,10 @@ We performed a backtest
   - Annualised estimated return 64% 
   - LP fees paid ~$1000
   - Max pullback -10%
+- **An example strategy**. Currently the hackathon entry misses some performance calculation elements
+    - Three leg swaps may have fees calculated incorrectly (MATIC->USDC->base token)
+    - [Price impact](https://tradingstrategy.ai/glossary/price-impact) is not considered - we assume 300k liquidity is enough for trading
+    - [Token tax tokens](https://tradingstrategy.ai/glossary/token-tax) are not ignored
 
 The strategy performance vs. buy-and-hold MATIC.
 
