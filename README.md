@@ -1,9 +1,13 @@
 ![Sushi DEX algorithmic trading logo](./logo.png)
 
+**Trading is the killer application of Web3**.
+
 This is the Github repository for **Citade-Sashimi** [EthDubai hackathon project](https://ethdubai-sushiswap-hackathon.devpost.com/).
 The project implements non-custodial investable automated trading strategies on the top of Sushi DEX.
 
 The hackathon comes with one example trading strategy, but it's easy to customise the approach for multiple professional-grade quant finance strategies. The strategies can be written in high-elvel Python, using on-chain data sources and 150+ technical indicators out of the box. No Solidity or low level blockchain knowledge is needed.
+
+- View 3 minutes YouTube presentation
 
 # Goal
 
@@ -14,7 +18,7 @@ The hackathon comes with one example trading strategy, but it's easy to customis
   risk management features of the automated strategy make DeFi trading safer for users
   than what they would likely to be executed manually.
 - For **cryptocurrency traders** non-custodial DeFi is safer than hack prone
-  and opaque centralised services like **FTX** or **3Commas**.
+  and opaque centralised services like **FTX** or **3Commas**. No need to share API keys.
 - For **Sushi** and its **liquidity providers** the project offers high quality market taker volume. 
 - For **strategy developers** there is high-level, easy to use, and much more powerful tooling what mere Solidity smart contracts can do. There is also opportunity for profit-sharing as Enzyme Vaults offer on-chain fund management features.
 
@@ -219,4 +223,5 @@ Frontend is written in SvelteKit.
 
 # Further questions
 
+- [View hackaton presentation slides](https://docs.google.com/presentation/d/1PSLiI7ycxmGl7cHqgs1WJe77uFkQzIHjHGCnFpbpwjw/edit?usp=sharing)
 - [Join our Discord](https://tradingstrategy.ai/community)
