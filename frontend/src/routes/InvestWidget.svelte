@@ -64,6 +64,7 @@
 		grid-template-columns: 1fr auto;
 		border-radius: 1rem;
 		padding: 1.5rem;
+		font-size: 18px;
 		background: var(--c-accent);
 	}
 
@@ -75,7 +76,6 @@
 
 	.info p {
 		margin: 0 0 1.5rem 0;
-		font-size: 18px;
 	}
 
 	.info label,
@@ -85,7 +85,14 @@
 
 	.info input {
 		font-family: monospace;
-		font-size: 18px;
+		font-size: inherit;
 		padding: 0.25rem;
+		width: 9em;
+	}
+
+	@media (max-width: 576px) {
+		.invest-widget {
+			grid-template-columns: auto;
+		}
 	}
 </style>
