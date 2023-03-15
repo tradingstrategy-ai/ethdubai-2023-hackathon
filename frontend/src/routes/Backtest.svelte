@@ -30,6 +30,7 @@
 	<h3>Strategy benchmark</h3>
 
 	<p>Strategy performance compared to various buy-and-hold benchmarks:</p>
+
 	<ul>
 		<li><span style:color="#008800">▬</span> Strategy</li>
 		<li><span style:color="#880000">▬</span> MATIC</li>
@@ -43,7 +44,7 @@
 <style>
 	ul {
 		list-style: none;
-		margin: 0 0 0.5rem 0;
+		margin: 0.5rem 0;
 		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
