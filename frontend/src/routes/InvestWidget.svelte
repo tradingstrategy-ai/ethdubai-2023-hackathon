@@ -1,9 +1,28 @@
 <script lang="ts">
-	import { connected, defaultEvmStores, signerAddress } from 'svelte-ethers-store';
+	import { utils } from 'ethers';
+	import {
+		connected,
+		chainData,
+		defaultEvmStores,
+		signerAddress,
+		signer
+	} from 'svelte-ethers-store';
 	import { formatAddress } from '$lib/helpers/formatters';
 	import { Button } from '$lib/components';
 
 	let investAmount = '';
+	let balance: string = '---';
+
+	$: updateBalance($signer, $chainData);
+
+	async function updateBalance(signer, chainData) {
+		balance = '---';
+		if (signer) {
+			const rawBalance = await signer.getBalance();
+			const value = utils.formatUnits(rawBalance, chainData.nativeCurrency.decimals);
+			balance = `${value} ${chainData.nativeCurrency.symbol}`;
+		}
+	}
 </script>
 
 <section class="container">
@@ -16,7 +35,7 @@
 			<p />
 			<p>
 				<span class="label">Wallet balance:</span><br />
-				---
+				{balance}
 			</p>
 			<p>
 				<label for="invest-amount">Amount to invest:</label><br />
