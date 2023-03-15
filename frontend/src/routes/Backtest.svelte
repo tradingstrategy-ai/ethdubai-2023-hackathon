@@ -4,7 +4,7 @@
 
 <section class="container backtest">
 	<h2>Backtesting performance</h2>
-	<p>Backtesting was performed on historical Sushi DEX / Poloygon trading data.</p>
+	<p>Backtesting was performed on historical Sushi DEX / Polygon trading data.</p>
 
 	<h3>Backtesting key metrics</h3>
 

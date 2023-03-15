@@ -21,7 +21,7 @@
 		<p>
 			This strategy has not been running long enough to gather sufficient live trading performance
 			data. Strategies may do trades weekly or monthly and it will take several rebalance cycles to
-			refelct the true performance.
+			reflect the true performance.
 		</p>
 	</section>
 
