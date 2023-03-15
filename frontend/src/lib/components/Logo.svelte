@@ -16,7 +16,7 @@
 		height: var(--logo-height, auto);
 	}
 
-	div :global(svg *) {
+	div :global(svg .logotype) {
 		fill: currentColor;
 	}
 </style>

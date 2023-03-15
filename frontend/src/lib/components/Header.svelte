@@ -15,6 +15,7 @@
 
 	.logo {
 		--logo-height: 4rem;
+		color: white;
 	}
 
 	@media (max-width: 768px) {
