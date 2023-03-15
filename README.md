@@ -7,9 +7,10 @@ The project implements non-custodial investable automated trading strategies on 
 
 The hackathon comes with one example trading strategy, but it's easy to customise the approach for multiple professional-grade quant finance strategies. The strategies can be written in high-elvel Python, using on-chain data sources and 150+ technical indicators out of the box. No Solidity or low level blockchain knowledge is needed.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WR_6Cp-7UNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[Watch the three minutes YouTube presentation](https://www.youtube.com/watch?v=WR_6Cp-7UNE):
 
-[View 3 minutes YouTube presentation](https://youtu.be/WR_6Cp-7UNE).
+[![Watch the three minutes YouTube presentation](https://i3.ytimg.com/vi/WR_6Cp-7UNE/maxresdefault.jpg)](https://www.youtube.com/watch?v=WR_6Cp-7UNE)
+
 
 # Goal
 
