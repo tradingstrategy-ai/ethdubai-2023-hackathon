@@ -15,7 +15,7 @@
 		</tr>
 		<tr>
 			<th>Annualised estimated return</th>
-			<td>64%</td>
+			<td>60%</td>
 		</tr>
 		<tr>
 			<th>LP fees paid</th>
