@@ -1,5 +1,6 @@
+![Sushi DEX algorithmic trading logo](./logo.png)
 
-This is the Github repository for **Citade-Sashimi** EthDubai hackathon project.
+This is the Github repository for **Citade-Sashimi** [EthDubai hackathon project](https://ethdubai-sushiswap-hackathon.devpost.com/).
 The project implements non-custodial investable automated trading strategies on the top of Sushi DEX.
 
 The hackathon comes with one example trading strategy, but it's easy to customise the approach for multiple professional-grade quant finance strategies. The strategies can be written in high-elvel Python, using on-chain data sources and 150+ technical indicators out of the box. No Solidity or low level blockchain knowledge is needed.
