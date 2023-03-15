@@ -1,5 +1,6 @@
 <script lang="ts">
-	import backtestPerformanceChart from '$lib/assets/charts/backtest-performance.svg';
+	// import backtestPerformanceChart from '$lib/assets/charts/backtest-performance.svg';
+	import { PerformanceChart } from '$lib/components';
 </script>
 
 <section class="container backtest">
@@ -31,18 +32,20 @@
 
 	<p>Strategy performance compared to various buy-and-hold benchmarks:</p>
 
-	<ul>
+	<!-- <ul>
 		<li><span style:color="#008800">▬</span> Strategy</li>
 		<li><span style:color="#add8e6">▬</span> MATIC</li>
 		<li><span style:color="#ffa500">▬</span> ETC</li>
 		<li><span style:color="#ff0000">▬</span> BTC</li>
 		<li><span style:color="#000088">▬</span> USD (do nothing)</li>
 	</ul>
-	<img src={backtestPerformanceChart} alt="Backtest performance chart" />
+	<img src={backtestPerformanceChart} alt="Backtest performance chart" /> -->
+
+	<PerformanceChart />
 </section>
 
 <style>
-	ul {
+	/* ul {
 		list-style: none;
 		margin: 0.5rem 0;
 		padding: 0;
@@ -55,7 +58,7 @@
 	li span {
 		display: inline-block;
 		transform: scale(1.5, 1) translate(-2px, -1px);
-	}
+	} */
 
 	table {
 		background: var(--c-accent);
