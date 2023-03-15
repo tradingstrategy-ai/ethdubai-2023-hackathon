@@ -25,8 +25,10 @@
 	<section class="container">
 		<h2>Strategy execution and source code</h2>
 		<p>
-			Soluta nesciunt aliquam unde, dolor commodi obcaecati error porro, accusamus nam tenetur a
-			magni explicabo vero labore similique eveniet ullam dignissimos officiis?
+			View <a
+				href="https://github.com/tradingstrategy-ai/ethdubai-2023-hackathon/blob/master/notebook/ethdubai-hackathon.ipynb"
+				>strategy notebook source code</a
+			> on GitHub.
 		</p>
 	</section>
 </main>
