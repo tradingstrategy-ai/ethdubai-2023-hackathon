@@ -32,7 +32,6 @@
 				<span class="label">Your account:</span><br />
 				{formatAddress($signerAddress)}
 			</p>
-			<p />
 			<p>
 				<span class="label">Wallet balance:</span><br />
 				{balance}
@@ -65,7 +64,7 @@
 		grid-template-columns: 1fr auto;
 		border-radius: 1rem;
 		padding: 1.5rem;
-		background: #eee;
+		background: var(--c-accent);
 	}
 
 	.ctas {

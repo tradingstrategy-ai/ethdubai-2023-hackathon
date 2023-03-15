@@ -58,7 +58,7 @@
 	}
 
 	table {
-		background: #eeeeee;
+		background: var(--c-accent);
 		border-radius: 1rem;
 		border-collapse: separate;
 	}
