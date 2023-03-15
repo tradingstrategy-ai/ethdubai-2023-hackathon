@@ -50,7 +50,7 @@
 			{#if $connected && $signerAddress}
 				<Button label="Disconnect wallet" on:click={() => defaultEvmStores.disconnect()} />
 			{:else}
-				<Button label="Connect wallet" on:click={() => defaultEvmStores.setProvider()} />
+				<Button label="Connect MetaMask" on:click={() => defaultEvmStores.setProvider()} />
 			{/if}
 			<Button disabled label="Deposit MATIC" />
 			<Button disabled label="Withdraw tokens" />
